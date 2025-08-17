@@ -123,28 +123,17 @@
       </div>
     </section>
 
-    <!-- SUBSCRIBE -->
-    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-16">
-      <div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-6 md:p-8">
-        <h3 class="text-2xl font-semibold">See our blog</h3>
-        <p class="mt-1 text-sm text-neutral-400">Stay current with the latest design trends, software, industry expectations and more.</p>
-      </div>
-    </section>
-
     <!-- FOOTER -->
     <footer class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 py-10 text-sm text-neutral-400">
       <div class="flex justify-between flex-wrap gap-4">
         <div>
-          <p class="uppercase text-[11px] tracking-wider">Find us on</p>
+          <p class="uppercase text-[11px] tracking-wider">Find me on</p>
           <div class="mt-2 flex items-center gap-3">
-            <a href="#" aria-label="x">✖️</a>
-            <a href="#" aria-label="ig">📷</a>
-            <a href="#" aria-label="yt">▶️</a>
-            <a href="#" aria-label="gh">🐙</a>
+            <a href="#" aria-label="x">Wechat: Jzz20161111</a>
           </div>
         </div>
         <div class="text-right">
-          <p>© 2024 Drippy, Inc. All rights reserved.</p>
+          <p>© 2025 Drippy, Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>

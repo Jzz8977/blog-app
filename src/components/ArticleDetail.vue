@@ -161,43 +161,21 @@
       </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-16">
-      <div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-6 md:p-8">
-        <h3 class="text-2xl font-semibold">Stay Updated</h3>
-        <p class="mt-1 text-sm text-neutral-400">Get notified when new articles are published.</p>
-        <div class="mt-4 flex flex-col sm:flex-row gap-3">
-          <div class="relative grow">
-            <input 
-              type="email" 
-              placeholder="Email Address" 
-              class="w-full rounded-lg bg-neutral-950 border border-neutral-800 pl-9 pr-3 py-2 text-sm placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-700"
-            />
-            <svg class="w-4 h-4 absolute left-2.5 top-2.5 text-neutral-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/>
-            </svg>
-          </div>
-          <button class="rounded-lg px-4 py-2 text-sm bg-white/10 hover:bg-white/15 transition-colors">
-            Subscribe
-          </button>
-        </div>
-      </div>
-    </section>
-
+   
     <!-- Footer -->
     <footer class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 py-10 text-sm text-neutral-400">
       <div class="flex justify-between flex-wrap gap-4">
         <div>
-          <p class="uppercase text-[11px] tracking-wider">Find us on</p>
+          <p class="uppercase text-[11px] tracking-wider">Find me on</p>
           <div class="mt-2 flex items-center gap-3">
-            <a href="#" aria-label="x">✖️</a>
-            <a href="#" aria-label="ig">📷</a>
+            <a href="#" aria-label="x">Wechat: Jzz20161111</a>
+            <!-- <a href="#" aria-label="ig">📷</a>
             <a href="#" aria-label="yt">▶️</a>
-            <a href="#" aria-label="gh">🐙</a>
+            <a href="#" aria-label="gh">🐙</a> -->
           </div>
         </div>
         <div class="text-right">
-          <p>© 2024 Jon AI Lab. All rights reserved.</p>
+          <p>© 2025 Jon AI Lab. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -320,9 +298,9 @@ const fetchArticle = async () => {
       // It's an ID
       response = await articles.getById(Number(articleId.value))
     }
-    
+    console.log(response)
     if (response.success) {
-      article.value = response.data.article
+      article.value = response.data
       
       // Increment view count
       await analytics.incrementView(article.value.id)

@@ -80,7 +80,7 @@ export const auth = {
 export const articles = {
   getAll: async (params = {}) => {
     try {
-      const response = await api.get('/public/articles', { params })
+      const response = await api.get('/articles', { params })
       return response.data
     } catch (error) {
       throw error.response?.data || error.message
@@ -89,7 +89,7 @@ export const articles = {
 
   getById: async (id) => {
     try {
-      const response = await api.get(`/public/articles/${id}`)
+      const response = await api.get(`/articles/${id}`)
       return response.data
     } catch (error) {
       throw error.response?.data || error.message
@@ -98,7 +98,7 @@ export const articles = {
 
   getBySlug: async (slug) => {
     try {
-      const response = await api.get(`/public/articles/slug/${slug}`)
+      const response = await api.get(`/articles/slug/${slug}`)
       return response.data
     } catch (error) {
       throw error.response?.data || error.message
@@ -155,7 +155,7 @@ export const articles = {
 export const categories = {
   getAll: async (params = {}) => {
     try {
-      const response = await api.get('/public/categories', { params })
+      const response = await api.get('/categories', { params })
       return response.data
     } catch (error) {
       throw error.response?.data || error.message
@@ -164,7 +164,7 @@ export const categories = {
 
   getById: async (id) => {
     try {
-      const response = await api.get(`/public/categories/${id}`)
+      const response = await api.get(`/categories/${id}`)
       return response.data
     } catch (error) {
       throw error.response?.data || error.message
@@ -203,7 +203,7 @@ export const categories = {
 export const analytics = {
   incrementView: async (articleId) => {
     try {
-      const response = await api.post(`/public/analytics/articles/${articleId}/view`)
+      const response = await api.post(`/analytics/articles/${articleId}/view`)
       return response.data
     } catch (error) {
       throw error.response?.data || error.message
