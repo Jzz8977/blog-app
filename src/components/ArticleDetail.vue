@@ -223,7 +223,7 @@ const likingInProgress = ref(false)
 
 // Get article ID from route params
 const articleId = computed(() => route.params.id || route.params.slug)
-debugger
+
 
 // Helper functions
 const getCategoryName = (categoryId: number) => {
@@ -329,7 +329,9 @@ const fetchArticle = async () => {
       article.value.view_count++
       
       // Check like status
+      debugger
       const likeStatus = await analytics.getLikeStatus(article.value.id)
+      debugger
       if (likeStatus.success) {
         hasLiked.value = likeStatus.data.has_liked
       }

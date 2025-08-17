@@ -203,7 +203,7 @@ export const categories = {
 export const analytics = {
   incrementView: async (articleId) => {
     try {
-      const response = await api.post(`/analytics/articles/${articleId}/view`)
+      const response = await api.post(`/public/analytics/articles/${articleId}/view`)
       return response.data
     } catch (error) {
       throw error.response?.data || error.message
