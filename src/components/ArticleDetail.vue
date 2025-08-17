@@ -307,9 +307,7 @@ const fetchArticle = async () => {
       article.value.view_count++
       
       // Check like status
-      debugger
       const likeStatus = await analytics.getLikeStatus(article.value.id)
-      debugger
       if (likeStatus.success) {
         hasLiked.value = likeStatus.data.has_liked
       }
