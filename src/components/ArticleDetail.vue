@@ -69,7 +69,7 @@
               👤
             </div>
             <div>
-              <p class="text-sm font-medium text-neutral-200">Author</p>
+              <p class="text-sm font-medium text-neutral-200 text-left">Jon</p>
               <p class="text-xs text-neutral-400">Published {{ formatDate(article.published_at || article.created_at) }}</p>
             </div>
           </div>

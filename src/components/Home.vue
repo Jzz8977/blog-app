@@ -51,7 +51,7 @@
         <p class="text-sm text-neutral-400 leading-relaxed line-clamp-4">{{ featuredArticle.excerpt }}</p>
         <div class="flex items-center gap-2 text-xs text-neutral-500">
           <div class="w-6 h-6 rounded-full bg-neutral-800 flex items-center justify-center">👤</div>
-          <span>Author</span>
+          <span class="text-left">Jon</span>
           <span>·</span>
           <span>{{ featuredArticle.view_count }} views</span>
         </div>
