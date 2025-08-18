@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Base configuration
-const API_BASE_URL = 'https://admin.aihc.top/api'
+const API_BASE_URL = 'https://blog.aihc.top/api'
 
 // Create axios instance
 const api = axios.create({
