@@ -102,7 +102,7 @@
       </header>
 
       <!-- Article Body -->
-      <div class="prose prose-lg prose-invert max-w-none" style="font-size: 30px;text-align: left;">
+      <div class="prose prose-lg prose-invert max-w-none" style="font-size: 18px;text-align: left;">
         <div v-html="article.content" class="text-neutral-300 leading-relaxed"></div>
       </div>
 
